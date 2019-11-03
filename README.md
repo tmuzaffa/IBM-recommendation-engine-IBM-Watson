@@ -29,9 +29,7 @@ I used the Anconda python distribution with python 3.0
 
 ## Objective<a name="motivation"></a>
 
-The objective of this project is to build a model and classify messages during a disaster. We have been given disaster twitter messages data set which have 36 pre-defined categories. With the help of the model, we can classify the message to these categories and send the message to the appropriate disaster relief agency. For example, we do not want Medical Help message to food agency as they wont be able to help the person in time. 
-
-This project will involve building an ETL pipeline and Machine Learning pipeline. Objective of this task is also multiclassification. We want one message to be classified to multiple categories if needed. 
+The objective of this project is to build a recommendation engine, that recommends articles to user, based on ranking, user interaction and SVD
 
 This data set is  provided to us by IBM
 ## File Descriptions <a name="files"></a>
@@ -40,17 +38,17 @@ This data set is  provided to us by IBM
 
 
 data:
-- disaster_message.csv
-- disaster_Categories.csv
+- articles_community.csv
+- user-item-interactions.csv
 
 
 Recommendation Engine:
-- train_classifer.py
-- ML Pipeline Preparation.ipynb
+- Recommendations_with_IBM.py
+- Recommendations_with_IBM.ipynb
 
 
 app:
-- go.html
+- Recommendations_with_IBM.html.html
 
 
 
@@ -74,9 +72,9 @@ We can also use A/B testing to see how our predictions are working. We can assig
 
 
 ## Charts<a name = "Charts"></a>
-![Histogram of user ineraction with articles](https://github.com/tmuzaffa/Disaster-Response-Pipeline-prediction/blob/master/plotly2.JPG)
-![Accuracy vs. number of latent features](https://github.com/tmuzaffa/Disaster-Response-Pipeline-prediction/blob/master/plotly2.JPG)
-![Accuracy vs number of latent features](https://github.com/tmuzaffa/Disaster-Response-Pipeline-prediction/blob/master/plotly2.JPG)
+![Histogram of user ineraction with articles](https://github.com/tmuzaffa/IBM-recommendation-engine-IBM-Watson/blob/master/01.png)
+![Accuracy vs. number of latent features](https://github.com/tmuzaffa/IBM-recommendation-engine-IBM-Watson/blob/master/02.png)
+![Accuracy vs number of latent features](https://github.com/tmuzaffa/IBM-recommendation-engine-IBM-Watson/blob/master/03.png)
 
   
   
