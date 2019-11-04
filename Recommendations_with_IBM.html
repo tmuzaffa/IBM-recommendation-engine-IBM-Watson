@@ -17413,7 +17413,8 @@ The top 10 recommendations for user 20 are the following article names:
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Provide your response here.</strong></p>
-<h4 id="Analysis:">Analysis:<a class="anchor-link" href="#Analysis:">&#182;</a></h4><p>We can see that there are total of 5149 users, upto 714 latent features and 714 articles. Dimensions of all matrices are correct for dot product.</p>
+<h4 id="Analysis:">Analysis:<a class="anchor-link" href="#Analysis:">&#182;</a></h4><p>We can see that there are total of 5149 users, upto 714 latent features and 714 articles. Dimensions of all matrices are correct for dot product. 
+Advantage of using FunkSVD which was proposed by Simon Funk is that we can use it to recommend  items to new users, even though we have no history/information about the new user.  It uses latent factor to recommend items to new users. This is beneficial as FunkSVD doesnt break down due to lack of data i.e. missing values. Because of this missing values, we use SVD to predict the rating the new user would give to the movie and then recommend the item to the new user accordingly. Funk SVD will ignore these missing values and find a way to compute latent factors only using the values we know.</p>
 
 </div>
 </div>

@@ -948,6 +948,7 @@ u.shape, s.shape, vt.shape
 # 
 # #### Analysis: 
 # We can see that there are total of 5149 users, upto 714 latent features and 714 articles. Dimensions of all matrices are correct for dot product. 
+# Advantage of using FunkSVD which was proposed by Simon Funk is that we can use it to recommend  items to new users, even though we have no history/information about the new user.  It uses latent factor to recommend items to new users. This is beneficial as FunkSVD doesnt break down due to lack of data i.e. missing values. Because of this missing values, we use SVD to predict the rating the new user would give to the movie and then recommend the item to the new user accordingly. Funk SVD will ignore these missing values and find a way to compute latent factors only using the values we know. 
 
 # `3.` Now for the tricky part, how do we choose the number of latent features to use?  Running the below cell, you can see that as the number of latent features increases, we obtain a lower error rate on making predictions for the 1 and 0 values in the user-item matrix.  Run the cell below to get an idea of how the accuracy improves as we increase the number of latent features.
 
